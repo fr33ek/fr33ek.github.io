@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="bg-success row align-items-center">
+      <b-card class="w-50 m-auto">
+          <b-row no-gutters>
+              <b-col md="6">
+                  <b-card-img src="https://pp.userapi.com/c628322/v628322236/34d65/ii9Npj5Ty2k.jpg" class="rounded"></b-card-img>
+              </b-col>
+              <b-col md="6">
+                  <b-card-body title="Zakhar Lazorin">
+                      <b-card-text>
+                          Team Lead, Scrum Master and a bit of Web-Developer.
+                      </b-card-text>
+                  </b-card-body>
+              </b-col>
+          </b-row>
+      </b-card>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+    #app {
+        height:100vh;
+    }
 </style>
