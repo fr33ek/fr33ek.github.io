@@ -35,7 +35,8 @@ const stack = [
   'Redis',
   'Docker',
   'GitLab',
-  'Yandex Cloud'
+  'Yandex Cloud',
+  'Cursor'
 ]
 
 const processThings = [
