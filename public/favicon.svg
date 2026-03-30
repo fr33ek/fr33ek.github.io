@@ -1,24 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="F">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="-15%" r="95%" fx="50%" fy="-15%">
-      <stop offset="0%" stop-color="rgb(139, 92, 246)" stop-opacity="0.22" />
-      <stop offset="55%" stop-color="#070708" stop-opacity="1" />
-      <stop offset="100%" stop-color="#050506" stop-opacity="1" />
+    <!-- Как на сайте: radial с верха, violet ~12% — см. default.vue bg -->
+    <radialGradient id="bg" cx="50%" cy="-18%" r="95%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgb(139, 92, 246)" stop-opacity="0.13" />
+      <stop offset="45%" stop-color="#070708" stop-opacity="1" />
+      <stop offset="100%" stop-color="#070708" stop-opacity="1" />
     </radialGradient>
   </defs>
-  <rect width="32" height="32" fill="url(#bg)" rx="8" />
-  <text
-    x="16"
-    y="16"
-    text-anchor="middle"
-    dominant-baseline="central"
-    font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', 'Segoe UI Mono', Menlo, Consolas, monospace"
-    font-size="15.5"
-    font-weight="600"
-    letter-spacing="0.08em"
+  <rect width="32" height="32" fill="url(#bg)" />
+  <!-- Глиф F из JetBrains Mono Medium (официальный TTF), центрирование в 32×32 -->
+  <g
     fill="#a78bfa"
-    fill-opacity="0.92"
+    transform="translate(16,16) scale(1.4350945857795172) translate(-6.489,7.665)"
   >
-    F
-  </text>
+    <path
+      d="M3.99 0L1.91 0L1.91-15.33L11.07-15.33L11.07-13.42L3.95-13.42L3.95-8.59L10.52-8.59L10.52-6.70L3.99-6.70L3.99 0Z"
+    />
+  </g>
 </svg>
