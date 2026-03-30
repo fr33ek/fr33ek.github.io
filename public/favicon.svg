@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="-15%" r="95%" fx="50%" fy="-15%">
+      <stop offset="0%" stop-color="rgb(139, 92, 246)" stop-opacity="0.22" />
+      <stop offset="55%" stop-color="#070708" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050506" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" fill="url(#bg)" rx="8" />
+  <text
+    x="16"
+    y="16"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', 'Segoe UI Mono', Menlo, Consolas, monospace"
+    font-size="15.5"
+    font-weight="600"
+    letter-spacing="0.08em"
+    fill="#a78bfa"
+    fill-opacity="0.92"
+  >
+    F
+  </text>
+</svg>
