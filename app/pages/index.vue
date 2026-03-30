@@ -77,9 +77,12 @@ const profileSocial = [
 
 <template>
   <main class="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pt-14 lg:pb-24">
-    <div class="flex flex-col gap-14 lg:flex-row lg:gap-12 xl:gap-16">
+    <div
+      class="flex flex-col gap-14 lg:flex-row lg:items-start lg:gap-12 xl:gap-16"
+    >
       <!-- Контент слева на десктопе; на мобилке — после фото (order) -->
-      <div class="min-w-0 flex-1 space-y-4 order-2 lg:order-1">
+      <!-- gap вместо space-y: иначе на lg скрытый «шапка» всё равно даёт margin-top сетке -->
+      <div class="order-2 flex min-w-0 flex-1 flex-col gap-4 lg:order-1">
         <div class="mb-2 text-center lg:hidden">
           <p class="font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-violet-400/90">
             profile.json
