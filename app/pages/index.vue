@@ -60,6 +60,19 @@ const learning = [
   'Schouten — командное взаимодействие, 2015',
   'BusinessLink — техсобеседования, 2015'
 ]
+
+const profileSocial = [
+  {
+    href: 'https://t.me/fr33ek',
+    label: 'Telegram',
+    icon: 'telegram' as const
+  },
+  {
+    href: 'https://vk.com/freeek',
+    label: 'ВКонтакте',
+    icon: 'vk' as const
+  }
+]
 </script>
 
 <template>
@@ -72,7 +85,7 @@ const learning = [
             profile.json
           </p>
           <h1 class="mt-2 text-3xl font-semibold tracking-tight text-white">fr33ek</h1>
-          <p class="mt-1 text-sm text-zinc-500">Санкт-Петербург</p>
+          <ProfileSocialLinks :links="profileSocial" />
         </div>
 
         <div class="grid auto-rows-min grid-cols-1 gap-4 md:grid-cols-2">
@@ -291,7 +304,7 @@ const learning = [
             profile.json
           </p>
           <p class="mt-2 text-2xl font-semibold tracking-tight text-white">fr33ek</p>
-          <p class="mt-1 text-sm text-zinc-500">Санкт-Петербург</p>
+          <ProfileSocialLinks :links="profileSocial" align="end" />
         </div>
       </aside>
     </div>
