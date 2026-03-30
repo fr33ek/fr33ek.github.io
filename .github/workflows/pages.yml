@@ -22,7 +22,8 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - run: npm ci
+      # npm ci падает на части версий npm из‑за optional/вложенных пакетов (@emnapi и др.) в lockfile v3
+      - run: npm install --no-audit --no-fund
       - run: npm run generate
       - uses: actions/upload-pages-artifact@v3
         with:
